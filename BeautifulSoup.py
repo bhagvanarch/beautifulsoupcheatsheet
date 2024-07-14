@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bsoup
 
 import requests as reqs
 
@@ -12,7 +12,7 @@ html_doc = resp.content
 
 
 
-beautsoup = BeautifulSoup(html_doc, 'lxml')
+beautsoup = bsoup(html_doc, 'lxml')
 
 
 
